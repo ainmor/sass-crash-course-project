@@ -1,0 +1,72 @@
+/* Categories Section*/
+
+.categories-container {
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .card {
+    max-width: 500px;
+    min-width: 350px;
+    &-header {
+      background-color: var(--color-primary);
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+    }
+    ul li {
+      margin-left: 2rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    &-title {
+      text-align: center;
+    }
+    i {
+      font-size: 3.5rem;
+      border-radius: 10%;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+      padding: 0.5rem;
+      margin: 0.2rem 0;
+      transition: var(--transition);
+    }
+    i:hover {
+      background-color: #fff;
+      transition: var(--transition);
+      &.fa-html5 {
+        color: var(--color-html);
+      }
+      &.fa-css3 {
+        color: var(--color-css);
+      }
+      &.fa-js {
+        color: var(--color-js);
+      }
+      &.fa-python {
+        color: var(--color-python);
+      }
+      &.fa-java {
+        color: var(--color-java);
+      }
+      &.fa-react {
+        color: var(--color-react);
+      }
+      &.fa-r-project {
+        color: var(--color-sql);
+      }
+      &.fa-file-excel {
+        color: var(--color-microsoft-excel);
+      }
+      &.fa-people-group {
+        color: var(--color-microsoft-teams);
+      }
+      &.fa-database {
+        color: var(--color-sql);
+      }
+    }
+    transition: var(--transition);
+    &:hover {
+      transform: translateY(-10px);
+      transition: var(--transition);
+    }
+  }
+}

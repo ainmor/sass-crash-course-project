@@ -1,0 +1,20 @@
+form .btn {
+  color: #eee;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-group input:focus {
+  outline: 1px solid var(--color-primary);
+}

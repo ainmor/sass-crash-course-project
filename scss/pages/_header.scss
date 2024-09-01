@@ -1,0 +1,69 @@
+/* Header */
+
+.header {
+  height: 80vh;
+  &-img {
+    max-width: 600px;
+    min-width: 200px;
+    animation: right 1s ease-in-out;
+  }
+  &-content {
+    max-width: 550px;
+    animation: left 1s ease-in-out;
+  }
+  .btn {
+    padding: 0.75rem 1.25rem;
+  }
+  a.btn {
+    color: #eee;
+    margin-right: 1.5rem;
+  }
+  animation: fadeInHeader 1s ease-in-out;
+
+  .large-icon {
+    font-size: 10rem; /* Increased font size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-primary);
+    border-radius: 10%;
+    padding: 1rem; /* Increased padding */
+    margin: 0.5rem; /* Increased margin */
+    transition: var(--transition);
+    color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: var(--color-primary);
+      transition: var(--transition);
+    }
+  }
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

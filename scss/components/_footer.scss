@@ -1,0 +1,15 @@
+/*Footer */
+
+.footer {
+  height: 20vh;
+  padding: 4rem 0;
+  .nav-link:hover {
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}

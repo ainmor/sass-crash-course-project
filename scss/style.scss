@@ -1,0 +1,17 @@
+@import "settings";
+@import "variables";
+
+// components
+@import "components/nav";
+@import "components/footer";
+@import "components/form";
+
+// pages
+@import "pages/header";
+@import "pages/categories";
+@import "pages/offers";
+@import "pages/testimonials";
+@import "pages/welcome";
+
+// responsive
+@import "responsive";
